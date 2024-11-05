@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hierarquia de Titulo</title>
     <!-- ESTILO CSSS -->
     <style>
-        body{
+        @font-face {
+            font-family: "fonteNatal";
+            src: url(fonte/MerryChristmasFlake.ttf);
+        }
+
+        #fonte{
+            font-family:"fonteNatal";
+            font-size: 5em
+        }
+        /*importando fonte*/
+        @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Marck+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        body {
             background-image: linear-gradient(#56d6e7, #a548db);
-        }
-        
+           background-attachment: fixed;/*fixar o background no fundo*/
+            text-align: center; /*alinha o conteudo ao centro dentro do body*/
 
-        #div1{
+
+        }
+
+        div {
+            display: inline-block;
             width: 400px;
-            justify-items: center;
-            margin: auto;
+            padding: 40px;
+            height: 100vh;
         }
 
-        #div2{
-            margin: auto;
-            width: 400px;
-            justify-items: center;
+        h1, h2, h3, h4, h5, h6{
+            font-family: "Marck Script", cursive;
         }
 
-        p{
+        p {
             text-align: justify;
             color: white;
-            font-size: 20px;
+            font-size: 21px;
+            font-family:"Playfair Display", serif; ;
         }
-        
     </style>
 
 </head>
+
 <body>
+    
+     <h1 id="fonte">Fonte Personalizadas</h1>
+
     <div id="div1">
         <h1>Falta de Sintonia &#x1F916</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit excepturi tenetur, sit animi quis, modi fugiat possimus veritatis magni itaque quasi, repudiandae tempora suscipit corrupti reiciendis alias consequatur odio voluptatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit excepturi tenetur, sit animi quis, modi
+            fugiat possimus veritatis magni itaque quasi, repudiandae tempora suscipit corrupti reiciendis alias
+            consequatur odio voluptatibus!</p>
         <h2>Pense antes de agir &#x1F916</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam consequuntur praesentium animi! Illum labore voluptatum sequi excepturi voluptate exercitationem animi, reiciendis sit ipsa amet id iure nam ab eligendi dignissimos.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam consequuntur praesentium animi! Illum
+            labore voluptatum sequi excepturi voluptate exercitationem animi, reiciendis sit ipsa amet id iure nam ab
+            eligendi dignissimos.</p>
         <h3>Passe mais tempo com seu desafeto &#x1F916</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptatibus nobis error velit incidunt quibusdam officiis assumenda ad voluptas? Autem, explicabo! Commodi distinctio dicta alias nulla, sint vel mollitia corrupti!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptatibus nobis error velit incidunt
+            quibusdam officiis assumenda ad voluptas? Autem, explicabo! Commodi distinctio dicta alias nulla, sint vel
+            mollitia corrupti!</p>
     </div>
 
     <div id="div2">
         <h4>Saiba com quem está lidando &#x1F916</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, earum hic, odio accusamus architecto dolorum assumenda corporis et voluptatibus dolorem nesciunt vel dignissimos maiores enim suscipit at minima quo excepturi?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, earum hic, odio accusamus architecto
+            dolorum assumenda corporis et voluptatibus dolorem nesciunt vel dignissimos maiores enim suscipit at minima
+            quo excepturi?</p>
         <h5>Tenha objetiviadade &#x1F916</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo dolore eligendi sapiente commodi, molestiae odit nesciunt vero quas magni nostrum. Vitae iste dolorem aperiam repellendus consectetur, ducimus obcaecati cumque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo dolore eligendi sapiente commodi,
+            molestiae odit nesciunt vero quas magni nostrum. Vitae iste dolorem aperiam repellendus consectetur, ducimus
+            obcaecati cumque!</p>
         <h6>Seja persistente &#x1F916</h6>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cumque molestiae nobis animi dolores, et consequuntur quis voluptatem sit aut iste ad non impedit, excepturi ab dignissimos debitis, error earum?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cumque molestiae nobis animi dolores, et
+            consequuntur quis voluptatem sit aut iste ad non impedit, excepturi ab dignissimos debitis, error earum?</p>
     </div>
 
 </body>
+
 </html>
